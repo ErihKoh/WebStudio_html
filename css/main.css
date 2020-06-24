@@ -46,7 +46,6 @@ p {
 }
 
 .conteiner {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -73,5 +72,19 @@ p {
 
 .centered {
   text-align: center;
+}
+
+.quality-text {
+  width: 450px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.icon-quality {
+  display: block;
+  width: 450px;
+  height: 120px;
+  padding: 25px 190px;
+  background-color: #f5f4fa;
 }
 /*# sourceMappingURL=main.css.map */
