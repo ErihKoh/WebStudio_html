@@ -1,15 +1,26 @@
-// .header-border {
-//   border-bottom: 1px solid #ececec;
-// }
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
 
-// /* filter */
+/* filter */
 
-// .filter {
-//   display: flex;
-//   margin-bottom: 50px;
-//   justify-content: center;
+.filter {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  //   margin-bottom: 50px;
+  //   justify-content: center;
 
-//   & .item:not(:last-child) {
-//     margin-right: 8px;
-//   }
-// }
+  & .item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+  }
+}
+
+// @media screen and (min-width: 480px) {
+.filter .item:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
