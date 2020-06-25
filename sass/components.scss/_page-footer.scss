@@ -1,9 +1,16 @@
-// footer {
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 1600px;
-//   background: #2f303a;
-// }
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  //   width: 1600px;
+  background: #2f303a;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+}
 
 // .page-footer {
 //   display: flex;
@@ -14,11 +21,4 @@
 
 // .left-footer {
 //   width: 231px;
-// }
-
-// footer {
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 1600px;
-//   background: #2f303a;
 // }

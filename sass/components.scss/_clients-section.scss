@@ -1,9 +1,12 @@
 .clients-section {
   display: flex;
 
-  //   & li:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
+  & li:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  & li:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
 
   & .title {
     color: $title-text-color;
