@@ -34,21 +34,16 @@ p {
   max-width: 100%;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section .title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.66;
-}
-
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
 }
 
 .button {

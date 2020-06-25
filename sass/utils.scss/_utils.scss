@@ -31,23 +31,27 @@ p {
   max-width: 100%;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+// .section {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
 
-  & .title {
-    margin-bottom: 50px;
+//   & .title {
+//     margin-bottom: 50px;
 
-    font-size: 36px;
-    line-height: 1.66;
-  }
-}
+//     font-size: 36px;
+//     line-height: 1.66;
+//   }
+// }
 
 .conteiner {
   // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 }
 
 .button {
