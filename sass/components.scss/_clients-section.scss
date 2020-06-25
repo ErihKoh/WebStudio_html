@@ -1,25 +1,18 @@
 .clients-section {
   display: flex;
 
-  & li:nth-child(2n + 1) {
+  & li:not(:last-child) {
     margin-right: 30px;
-  }
-  & li:nth-child(-n + 4) {
-    margin-bottom: 30px;
   }
 
   & .title {
     color: $title-text-color;
   }
-
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-  }
 }
 
 .clients-link {
   display: flex;
-  //   width: 170px;
+  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -39,9 +32,5 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 210px;
   }
 }

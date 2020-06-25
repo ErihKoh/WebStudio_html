@@ -1,7 +1,7 @@
 .subscribe {
   display: inline-flex;
   flex-direction: column;
-  //   margin-left: 94px;
+  margin-left: 94px;
 
   &-text {
     margin-bottom: 20px;
@@ -18,7 +18,7 @@
     display: inline-flex;
     padding-left: 29px;
     padding-right: 13px;
-    // margin-left: 12px;
+    margin-left: 12px;
     font-weight: 900;
   }
 }
@@ -27,23 +27,17 @@
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
-  // min-width: 358px;
+  min-width: 358px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #fff;
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    margin-bottom: 20px;
-  }
 }
 
 .footer-form {
-  @media screen and (min-width: 480px) {
-    flex-direction: column;
-  }
+  display: flex;
+  align-items: baseline;
 
   & ::placeholder {
     padding: 18px 12px;

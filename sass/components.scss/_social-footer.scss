@@ -1,5 +1,5 @@
 .footer-social {
-  margin-bottom: 60px;
+  margin-left: 69px;
 }
 .community {
   color: $primery-bg-color;
@@ -11,12 +11,7 @@
 
 .social {
   display: flex;
-  justify-content: center;
   margin-top: 21px;
-}
-
-.social .item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .footer-social-link {
