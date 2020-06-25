@@ -1,5 +1,5 @@
 .app-section-list {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   display: flex;
@@ -10,7 +10,7 @@
 }
 
 .app-section-title {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
