@@ -2,6 +2,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .community {
   color: $primery-bg-color;

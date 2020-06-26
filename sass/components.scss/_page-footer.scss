@@ -1,7 +1,14 @@
 footer {
   margin-left: auto;
   margin-right: auto;
-  //   width: 1600px;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    padding-left: 215px;
+    padding-right: 215px;
+
+    width: 100%;
+  }
+
   background: #2f303a;
 }
 
@@ -12,11 +19,17 @@ footer {
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+
+    align-items: baseline;
+  }
 }
 
-// .flex-tablet {
-//   @media screen and (min-width: $tablet) {
-//     display: inline-flex;
-//     justify-content: space-around;
-//   }
-// }
+.flex-tablet {
+  @media screen and (min-width: 480px) {
+    display: inline-flex;
+    justify-content: space-around;
+  }
+}

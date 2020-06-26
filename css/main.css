@@ -493,7 +493,16 @@ p {
 footer {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   background: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  footer {
+    padding-left: 215px;
+    padding-right: 215px;
+    width: 100%;
+  }
 }
 
 .page-footer {
@@ -509,7 +518,19 @@ footer {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .flex-tablet {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -577,6 +598,13 @@ address p:not(:last-child) {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .community {
   color: #ffffff;
   font-weight: bold;
@@ -633,6 +661,13 @@ address p:not(:last-child) {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .community {
   color: #ffffff;
   font-weight: bold;
@@ -684,9 +719,9 @@ address p:not(:last-child) {
 }
 
 .subscribe {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -722,6 +757,7 @@ address p:not(:last-child) {
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
+  max-width: 450px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
