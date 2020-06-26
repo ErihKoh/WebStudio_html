@@ -31,17 +31,27 @@ p {
   max-width: 100%;
 }
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
+.section {
+  padding-bottom: 60px;
 
-//   & .title {
-//     margin-bottom: 50px;
+  & .title {
+    margin-bottom: 30px;
 
-//     font-size: 36px;
-//     line-height: 1.66;
-//   }
-// }
+    font-size: 28px;
+    line-height: 1.17;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.66;
+    }
+
+    @media screen and (max-width: 1199px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+}
 
 .conteiner {
   // width: 1200px;

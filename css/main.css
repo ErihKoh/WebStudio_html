@@ -34,6 +34,31 @@ p {
   max-width: 100%;
 }
 
+.section {
+  padding-bottom: 60px;
+}
+
+.section .title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+}
+
+@media screen and (max-width: 1199px) {
+  .section .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.66;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section .title {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
@@ -132,6 +157,7 @@ p {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
+  margin-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -167,6 +193,40 @@ p {
 .hero-button {
   padding: 10px 32px;
   font-weight: bold;
+}
+
+.border-quality {
+  border-bottom: 1px solid #ececec;
+}
+
+.quality-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.quality-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.quality-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.icon-quality {
+  display: block;
+  width: 450px;
+  height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f5f4fa;
 }
 
 .app-section-list {

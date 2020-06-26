@@ -1,60 +1,40 @@
-// .border-quality {
-//   border-bottom: 1px solid #ececec;
-// }
+.border-quality {
+  border-bottom: 1px solid #ececec;
+}
 
-// .quality {
-//   & .list {
-//     // display: inline-flex;
-//     // flex-wrap: wrap;
-//   }
+.quality {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-//   &-title {
-//     margin-top: 30px;
-//     margin-bottom: 10px;
+  &-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
 
-//     font-size: 14px;
-//     line-height: 1.14;
-//     text-transform: uppercase;
-//   }
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
 
-//   //   & .item:not(:last-child) {
-//   //     margin-right: 30px;
-//   //   }
+  //   & .item:not(:last-child) {
+  //     margin-right: 30px;
+  //   }
 
-//   &-text {
-//     font-size: 14px;
-//     line-height: 1.71;
+  &-text {
+    // width: 270px;
 
-//     @media screen and (min-width: 480px) {
-//       width: 450px;
-//     }
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
-//     @media screen and (min-width: 768px) {
-//       width: 354px;
-//     }
+.icon-quality {
+  display: block;
+  width: 450px;
+  height: 120px;
 
-//     @media screen and (min-width: 1200px) {
-//       width: 270px;
-//     }
-//   }
-// }
-
-// .icon-quality {
-//   display: block;
-//   padding: 25px 192px;
-//   height: 120px;
-
-//   background-color: #f5f4fa;
-
-//   @media screen and (min-width: 480px) {
-//     width: 450px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 354px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     width: 270px;
-//   }
-// }
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f5f4fa;
+}
