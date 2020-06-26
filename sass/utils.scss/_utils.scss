@@ -46,8 +46,8 @@ p {
       line-height: 1.66;
     }
 
-    @media screen and (max-width: 1199px) {
-      padding-top: 94px;
+    @media screen and (min-width: 1200px) {
+      // padding-top: 94px;
       padding-bottom: 94px;
     }
   }

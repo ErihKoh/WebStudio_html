@@ -4,8 +4,33 @@
 
 .quality {
   &-list {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
+  &-item {
+    @media screen and (min-width: 480px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+  }
+
+  &-item:not(:last-child) {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
   }
 
   &-title {
@@ -17,12 +42,8 @@
     text-transform: uppercase;
   }
 
-  //   & .item:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-
   &-text {
-    // width: 270px;
+    width: 100%;
 
     font-size: 14px;
     line-height: 1.71;
@@ -31,7 +52,7 @@
 
 .icon-quality {
   display: block;
-  width: 450px;
+  width: 100%;
   height: 120px;
 
   padding-top: 25px;
