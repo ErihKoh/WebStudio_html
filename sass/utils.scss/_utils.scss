@@ -32,7 +32,13 @@ p {
 }
 
 .section {
+  padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   & .title {
     margin-bottom: 30px;
@@ -44,11 +50,6 @@ p {
       margin-bottom: 50px;
       font-size: 36px;
       line-height: 1.66;
-    }
-
-    @media screen and (min-width: 1200px) {
-      // padding-top: 94px;
-      padding-bottom: 94px;
     }
   }
 }

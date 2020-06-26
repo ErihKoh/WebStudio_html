@@ -35,7 +35,15 @@ p {
 }
 
 .section {
+  padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section .title {
@@ -49,12 +57,6 @@ p {
     margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.66;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section .title {
-    padding-bottom: 94px;
   }
 }
 
@@ -156,7 +158,6 @@ p {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-bottom: 60px;
   background-color: #2f303a;
 }
 
@@ -300,6 +301,7 @@ p {
 @media screen and (min-width: 1200px) {
   .app {
     display: block;
+    padding-top: 0;
   }
 }
 
