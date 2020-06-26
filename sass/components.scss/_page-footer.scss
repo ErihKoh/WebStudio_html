@@ -14,6 +14,9 @@ footer {
   padding-bottom: 60px;
 }
 
-// .left-footer {
-//   width: 231px;
+// .flex-tablet {
+//   @media screen and (min-width: $tablet) {
+//     display: inline-flex;
+//     justify-content: space-around;
+//   }
 // }
