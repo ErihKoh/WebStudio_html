@@ -1,12 +1,33 @@
-// .page-header {
-//   // display: flex;
-//   // align-items: center;
-//   width: $width-page;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.page-header {
+  position: relative;
+  // display: flex;
+  // align-items: center;
+  //   width: $width-page;
+  //   margin-left: auto;
+  //   margin-right: auto;
+}
 
-// .header-item {
-//   display: flex;
-//   align-items: center;
-// }
+.header-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ececec;
+}
+
+.menu-batton {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  & .icon-menu {
+    display: none;
+  }
+  &.is-open .icon-menu {
+    display: block;
+  }
+  &.is-open .icon-cross {
+    display: none;
+  }
+}
