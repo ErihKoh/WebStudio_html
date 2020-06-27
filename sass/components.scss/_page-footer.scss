@@ -20,16 +20,16 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: $desktop) {
-    flex-direction: row;
+  // @media screen and (min-width: $desktop) {
+  //   flex-direction: row;
 
-    align-items: baseline;
-  }
+  //   align-items: baseline;
+  // }
 }
 
-.flex-tablet {
-  @media screen and (min-width: 480px) {
-    display: inline-flex;
-    justify-content: space-around;
-  }
-}
+// .flex-tablet {
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     justify-content: space-around;
+//   }
+// }
