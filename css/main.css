@@ -428,7 +428,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 365px;
+  max-width: 365px;
   font-size: 26px;
   line-height: 1.61;
   color: #ffffff;
@@ -440,7 +440,7 @@ p {
 @media screen and (min-width: 1200px) {
   .hero-title {
     margin-bottom: 46px;
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
