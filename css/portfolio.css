@@ -400,15 +400,12 @@ p {
 footer {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
   background: #2f303a;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   footer {
-    padding-left: 215px;
-    padding-right: 215px;
-    width: 100%;
+    text-align: center;
   }
 }
 
@@ -420,13 +417,49 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-address {
-  margin-bottom: 60px;
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .flex-tablet {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-tablet {
+    margin-right: 94px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  address {
+    margin-bottom: 60px;
+  }
 }
 
 address p:not(:last-child) {
@@ -478,15 +511,14 @@ address p:not(:last-child) {
 }
 
 .footer-social {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+  margin-left: 69px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-social {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 
@@ -541,15 +573,14 @@ address p:not(:last-child) {
 }
 
 .footer-social {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 60px;
+  margin-left: 69px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-social {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 
@@ -611,7 +642,9 @@ address p:not(:last-child) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .subscribe-text {
@@ -631,12 +664,18 @@ address p:not(:last-child) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  margin-left: 12px;
   padding-left: 29px;
   padding-right: 13px;
   font-weight: 900;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
 }
 
 .mail-field {
@@ -644,6 +683,7 @@ address p:not(:last-child) {
   padding-top: 15px;
   padding-left: 15px;
   padding-bottom: 15px;
+  width: 100%;
   max-width: 450px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -653,14 +693,32 @@ address p:not(:last-child) {
   color: #fff;
 }
 
+@media screen and (max-width: 1199px) {
+  .mail-field {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-field {
+    width: 358px;
+  }
+}
+
 .footer-form {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer-form ::-webkit-input-placeholder {
