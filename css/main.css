@@ -122,7 +122,12 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 767px) {
+  .header-item {
+    border-bottom: 1px solid #ececec;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -334,8 +339,10 @@ p {
   display: flex;
 }
 
-.contatcs .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .contatcs .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (max-width: 1199px) {

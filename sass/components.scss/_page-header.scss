@@ -10,7 +10,10 @@
 .header-item {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: 767px) {
+    border-bottom: 1px solid #ececec;
+  }
 
   @media screen and (max-width: 1199px) {
     justify-content: space-between;

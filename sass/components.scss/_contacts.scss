@@ -2,7 +2,9 @@
   display: flex;
 
   & .item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: $tablet) {
+      margin-right: 30px;
+    }
   }
 
   @media screen and (max-width: 1199px) {
