@@ -36,6 +36,7 @@ p {
 .img-block {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -233,6 +234,7 @@ p {
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 999;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -611,7 +613,7 @@ p {
 }
 
 .card-team {
-  width: 270px;
+  max-width: 270px;
   padding-top: 30px;
   padding-bottom: 24px;
   border-bottom-left-radius: 4px;
