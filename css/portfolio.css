@@ -530,7 +530,7 @@ p {
 
 .card-content {
   max-width: 450px;
-  padding: 24px;
+  padding: 24px 15px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
