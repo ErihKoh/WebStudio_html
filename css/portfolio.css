@@ -529,7 +529,6 @@ address p:not(:last-child) {
   .footer-social {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
   }
 }
 
@@ -591,7 +590,6 @@ address p:not(:last-child) {
   .footer-social {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
   }
 }
 
