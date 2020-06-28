@@ -1,15 +1,22 @@
 .contatcs {
   display: flex;
-  //   margin-left: auto;
+  // margin-left: auto;
 
-  //   & .item:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  flex-direction: column;
+  & .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 
   & .item {
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: $tablet) {
+      justify-content: start;
+    }
   }
 }
 
