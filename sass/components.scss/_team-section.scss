@@ -14,9 +14,9 @@
 }
 
 .team-item {
-  @media screen and (min-width: 480px) {
-    width: 100%;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 100%;
+  // }
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
@@ -49,7 +49,7 @@
 }
 
 .card-team {
-  width: 270px;
+  max-width: 270px;
   padding-top: 30px;
   padding-bottom: 24px;
   border-bottom-left-radius: 4px;
