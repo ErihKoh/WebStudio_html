@@ -141,10 +141,10 @@
             <li class="app-section-item">
               <img
                 srcset="
-                  ./image/laptop/laptop@2x.jpg 2x,
-                  ./image/laptop/laptop@3x.jpg 3x
+                  ./image/laptop/desktop/laptop-1200@2x.jpg 2x,
+                  ./image/laptop/desktop/laptop-1200@3x.jpg 3x
                 "
-                src="./image/laptop/laptop.jpg"
+                src="./image/laptop/desktop/laptop-1200.jpg"
                 class="img-block"
                 width="370"
                 alt="ноутбук"
@@ -171,10 +171,10 @@
             <li class="app-section-item">
               <img
                 srcset="
-                  ./image/screen/screen@2x.jpg 2x,
-                  ./image/screen/screen@3x.jpg 3x
+                  ./image/screen/desktop/screen-1200@2x.jpg 2x,
+                  ./image/screen/desktop/screen-1200@3x.jpg 3x
                 "
-                src="./image/screen/screen.jpg"
+                src="./image/screen/desktop/screen-1200.jpg"
                 class="img-block"
                 width="370"
                 alt="экран"
@@ -194,16 +194,40 @@
           <h2 class="title centered">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                srcset="
-                  ./image/kucherenko/kucherenko@2x.jpg 2x,
-                  ./image/kucherenko/kucherenko@3x.jpg 3x
-                "
-                src="./image/kucherenko/kucherenko.jpg"
-                class="img-block team-img"
-                width="450"
-                alt="дизайнер Николай"
-              />
+              <picture class="team-img">
+                <source
+                  srcset="
+                    ./image/kucherenko/mobile/kucherenko-480.jpg    1x,
+                    ./image/kucherenko/mobile/kucherenko-480@2x.jpg 2x,
+                    ./image/kucherenko/mobile/kucherenko-480@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/kucherenko/tablet/kucherenko-768.jpg    1x,
+                    ./image/kucherenko/tablet/kucherenko-768@2x.jpg 2x,
+                    ./image/kucherenko/tablet/kucherenko-768@3x.jpg 3x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/kucherenko/desktop/kucherenko-1200.jpg    1x,
+                    ./image/kucherenko/desktop/kucherenko-1200@2x.jpg 2x,
+                    ./image/kucherenko/desktop/kucherenko-1200@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="img-block"
+                  src="./image/kucherenko/tablet/kucherenko-768.jpg"
+                  alt="дизайнер Николай"
+                />
+              </picture>
               <div class="card-team">
                 <h3 class="team-title centered">Николай Кучеренко</h3>
                 <p class="team-profession centered">Product Designer</p>
@@ -257,16 +281,40 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                  ./image/ivanova/ivanova@2x.jpg 2x,
-                  ./image/ivanova/ivanova@3x.jpg 3x
-                "
-                src="./image/ivanova/ivanova.jpg"
-                class="img-block team-img"
-                width="450"
-                alt="разработчик Ольга"
-              />
+              <picture class="team-img">
+                <source
+                  srcset="
+                    ./image/ivanova/mobile/ivanova-480.jpg    1x,
+                    ./image/ivanova/mobile/ivanova-480@2x.jpg 2x,
+                    ./image/ivanova/mobile/ivanova-480@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/ivanova/tablet/ivanova-768.jpg    1x,
+                    ./image/ivanova/tablet/ivanova-768@2x.jpg 2x,
+                    ./image/ivanova/tablet/ivanova-768@3x.jpg 3x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/ivanova/desktop/ivanova-1200.jpg    1x,
+                    ./image/ivanova/desktop/ivanova-1200@2x.jpg 2x,
+                    ./image/ivanova/desktop/ivanova-1200@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="img-block"
+                  src="./image/ivanova/ivanova-768"
+                  alt="разработчик Ольга"
+                />
+              </picture>
               <div class="card-team">
                 <h3 class="team-title centered">Ольга Иванова</h3>
                 <p class="team-profession centered">Frontend Developer</p>
@@ -320,16 +368,40 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                  ./image/shevchenko/shevchenko@2x.jpg 2x,
-                  ./image/shevchenko/shevchenko@3x.jpg 3x
-                "
-                src="./image/shevchenko/shevchenko.jpg"
-                class="img-block team-img"
-                width="450"
-                alt="маркетолог Андрей"
-              />
+              <picture class="team-img">
+                <source
+                  srcset="
+                    ./image/shevchenko/mobile/shevchenko-480.jpg    1x,
+                    ./image/shevchenko/mobile/shevchenko-480@2x.jpg 2x,
+                    ./image/shevchenko/mobile/shevchenko-480@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/shevchenko/tablet/shevchenko-768.jpg             1x,
+                    ./image/shevchenko/tablet/shevchenko-768@2x.jpg          2x,
+                    ./image/shevchenko/tablet/shevchenko-768@3x.jpg 3x
+                  "
+                  media="(max-width: 1199px)"
+                />
+
+                <source
+                  srcset="
+                    ./image/shevchenko/desktop/shevchenko-1200.jpg    1x,
+                    ./image/shevchenko/desktop/shevchenko-1200@2x.jpg 2x,
+                    ./image/shevchenko/desktop/shevchenko-1200@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                />
+
+                <img
+                  class="img-block"
+                  src="./image/shevchenko/tablet/shevchenko-768.jpg"
+                  alt="маркетолог Андрей"
+                />
+              </picture>
               <div class="card-team .team-img">
                 <h3 class="team-title centered">Андрей Шевченко</h3>
                 <p class="team-profession centered">Marketing</p>
@@ -383,16 +455,26 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                  ./image/nikolaev/nikolaev@2x.jpg 2x,
-                  ./image/nikolaev/nikolaev@3x.jpg 3x
-                "
-                src="./image/nikolaev/nikolaev.jpg"
-                class="img-block team-img"
-                width="450"
-                alt="дизайнер Иван"
-              />
+              <picture class="team-img">
+                <source srcset="
+                                  ./image/nikolaev/mobile/nikolaev-480.jpg    1x,
+                                  ./image/nikolaev/mobile/nikolaev-480@2x.jpg 2x,
+                                  ./image/nikolaev/mobile/nikolaev-480@3x.jpg 3x
+                                " media="(max-width: 767px)" />
+              
+                <source srcset="
+                                  ./image/nikolaev/tablet/nikolaev-768.jpg             1x,
+                                  ./image/nikolaev/tablet/nikolaev-768@2x.jpg          2x,
+                                  ./image/nikolaev/tablet/nikolaev-768@3x.jpg 3x
+                                " media="(max-width: 1199px)" />
+              
+                <source srcset="
+                                  ./image/nikolaev/desktop/nikolaev-1200.jpg    1x,
+                                  ./image/nikolaev/desktop/nikolaev-1200@2x.jpg 2x,
+                                  ./image/nikolaev/desktop/nikolaev-1200@3x.jpg 3x
+                                " media="(min-width: 1200px)" />
+              
+                <img class="img-block" src="./image/nikolaev/tablet/nikolaev-768.jpg" alt="дизайнер Иван" />
               <div class="card-team">
                 <h3 class="team-title centered">Иван Николаев</h3>
                 <p class="team-profession centered">UI Designer</p>
