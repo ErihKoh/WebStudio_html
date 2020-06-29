@@ -622,11 +622,6 @@ p {
   background-color: #f5f4fa;
 }
 
-.team-img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
