@@ -346,6 +346,8 @@ p {
   .nav-link {
     padding-top: 0;
     padding-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.16;
   }
 }
 
@@ -409,17 +411,17 @@ p {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 767px) {
-  .contacts-link {
-    font-size: 18px;
-    line-height: 1.16;
-  }
-}
-
 @media screen and (max-width: 1199px) {
   .contacts-link {
     font-size: 12px;
     line-height: 1.14;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-link {
+    font-size: 18px;
+    line-height: 1.16;
   }
 }
 
