@@ -28,11 +28,9 @@
   }
 }
 .site-nav-list {
-  // @media screen and (min-width: $mobile) {
-  //   padding-top: 60px;
-  //   padding-bottom: 60px;
-  // }
-
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
@@ -68,14 +66,15 @@
 
   justify-content: center;
 
-  @media screen and (max-width: 767px) {
-    padding-bottom: 8px;
-    margin-bottom: 40px;
-  }
-
   & .nav-link:hover,
   & .nav-link:focus {
     color: $accent-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-item:not(:last-child) {
+    margin-bottom: 40px;
   }
 }
 
