@@ -29,12 +29,12 @@
 }
 .site-nav-list {
   @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+    margin-bottom: 44px;
   }
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
-    margin-right: 84px;
+    margin-right: 80px;
   }
 
   @media screen and (min-width: $desktop) {
