@@ -28,12 +28,15 @@
   }
 }
 .site-nav-list {
-  //   display: inline-block;
+  // @media screen and (min-width: $mobile) {
+  //   padding-top: 60px;
+  //   padding-bottom: 60px;
+  // }
 
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: row;
-    margin-right: 60px;
+    margin-right: 84px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -65,6 +68,11 @@
 
   justify-content: center;
 
+  @media screen and (max-width: 767px) {
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+  }
+
   & .nav-link:hover,
   & .nav-link:focus {
     color: $accent-color;
@@ -95,7 +103,7 @@
   letter-spacing: 0.02em;
 
   @media screen and (max-width: 767px) {
+    padding-top: 0;
     padding-bottom: 8px;
-    margin-bottom: 40px;
   }
 }

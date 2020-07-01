@@ -264,7 +264,7 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-right: 60px;
+    margin-right: 84px;
   }
 }
 
@@ -299,6 +299,13 @@ p {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .nav-item {
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+  }
+}
+
 .nav-item .nav-link:hover,
 .nav-item .nav-link:focus {
   color: #2196f3;
@@ -330,8 +337,8 @@ p {
 
 @media screen and (max-width: 767px) {
   .nav-link {
+    padding-top: 0;
     padding-bottom: 8px;
-    margin-bottom: 40px;
   }
 }
 
@@ -414,13 +421,17 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 60px;
+  margin-bottom: 32px;
 }
 
 @media screen and (max-width: 767px) {
   .filter-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -8px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 }
 
@@ -429,18 +440,13 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .filter-list {
-    margin-top: 60px;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filter-list {
+    margin-top: 93px;
     margin-bottom: 50px;
   }
 }

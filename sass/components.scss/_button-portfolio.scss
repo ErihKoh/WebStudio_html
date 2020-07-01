@@ -6,22 +6,23 @@
 
 .filter-list {
   display: flex;
+  margin-top: 60px;
+  margin-bottom: 32px;
 
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
-    margin: -8px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 
   @media screen and (min-width: $tablet) {
     justify-content: center;
-  }
-
-  @media screen and (max-width: 1199px) {
-    margin-top: 60px;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: $desktop) {
+    margin-top: 93px;
     margin-bottom: 50px;
   }
 }
