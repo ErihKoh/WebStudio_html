@@ -40,4 +40,14 @@
   &.is-open .icon-cross {
     display: none;
   }
+
+  & .icon-menu:hover,
+  & .icon-menu:focus {
+    fill: $accent-color;
+  }
+
+  & .icon-cross:hover,
+  & .icon-cross:focus {
+    fill: $accent-color;
+  }
 }
